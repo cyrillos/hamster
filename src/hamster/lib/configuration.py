@@ -22,6 +22,10 @@ gconf part of this code copied from Gimmie (c) Alex Gravely via Conduit (c) John
 License: GPLv2
 """
 
+import gi
+gi.require_version('Gtk', '3.0')
+gi.require_version('GConf', '2.0')
+
 import os
 from hamster.client import Storage
 from xdg.BaseDirectory import xdg_data_home
